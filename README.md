@@ -4,27 +4,31 @@ There are many open-source softwares/web-tools (e.g. [MakeSense](https://github.
 
 
 ## Why do I need an annotaion tool based on ImageJ/Fiji
-I can think of three reasons:
+I can think of two reasons:
 1. If you have already drawn and saved your bounding box rectangle ROIs in ImageJ/Fiji, and you don't want to annotate your images all over again, then you can use the macro here to convert those rectangle ROIs to a Pascal VOC .xml file. 
-2. Some web-tools do not allow you to upload a partially annotated image and continue from where you left off. This is where ImageJ/Fiji based annotation tool can help. You can stop at anytime by saving your ROIs and then come back to annotating from where you left off.
-3. If you are already familiar and confortable with drawing ROIs in ImageJ/Fiji and don't want to learn any other software or web-tool. 
+2. If you are already familiar and confortable with drawing ROIs in ImageJ/Fiji and don't want to learn any other software or web-tool. 
 
 ## How does it work
-**Step 1**: Go to step 2 if you have already created bounding box rectangle ROIs around your objects-of-interest.  
-Otherwise, open you images one-by-one in ImageJ/Fiji and start drawing rectangle ROIs around your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you can group them together by defining the group number (1,2... so one). If there is only one type of object you are interested in annotating, then there is no need for defining the group.
+### Step 1: 
+Go to step 2 if you have already created bounding box rectangle ROIs around your objects-of-interest.  
 
-![image of ROI Manager showing the group option]()
+Otherwise, open you images one-by-one in ImageJ/Fiji and start drawing rectangle ROIs around your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you can group them together by adding their group numbers (1,2... so one) by selecting *Properties...* in the ROI Manager (see step 2 for more details on adding the group numbers). If there is only one type of object you are interested in annotating, then there is no need for defining the group number.
 
-**Step 2**: Keep all of your images and the corresponding ROIs.zip files in a folder. Open one image and its corresponding ROIs.zip file in ImageJ/Fiji and run the macro provided here.
-Case 1: Single objects
+### Step 2: 
+Keep all of your images and the corresponding ROIs.zip files in a folder. Open one image and its corresponding ROIs.zip file in ImageJ/Fiji and run the [PASCAL VOC xml generator macro](https://github.com/ved-sharma/PASCAL_VOC_xml_generator_ImageJ_Fiji/blob/ddc2599146b171bcdcc25ea3ef31f13e45f9f3ec/PASCAL_VOC_xml_generator.ijm)  
 
+#### Case 1: Annotating objects of a single type  
+Running the macro will open up a dialog box, where user can enter the class name of the objects. After user hits OK, an .xml file is generated at the same location where the image was opened from.
 
-Case 2: Multi-objects
+![](https://github.com/ved-sharma/PASCAL_VOC_xml_generator_ImageJ_Fiji/blob/ddc2599146b171bcdcc25ea3ef31f13e45f9f3ec/Files/one_group_example.png)
 
+#### Case 2: Annotating objects of two or more types  
+Running the macro will open up a dialog box, where user can enter the class names of the objects. After user hits OK, an .xml file is generated at the same location where the image was opened from.  
 
-Note: the ROI names will be 
+In the following example user drew two types of ROIs - Round (shown in blue, group 1) and Elongated (shown in red, group 2) 
 
+![](https://github.com/ved-sharma/PASCAL_VOC_xml_generator_ImageJ_Fiji/blob/ddc2599146b171bcdcc25ea3ef31f13e45f9f3ec/Files/two_groups_example.png)
 
-**Step 3**: Keep
+## Questions
+[Image.sc](https://forum.image.sc/) is the best place to ask questions about this plugin. Please post your question with @vedsharma tag so I recieve your message.
 
-**Step 1**: Keep
