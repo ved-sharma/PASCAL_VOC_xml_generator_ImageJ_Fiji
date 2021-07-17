@@ -12,7 +12,7 @@ I can think of two reasons:
 ### Step 1: 
 Go to step 2 if you have already created bounding box rectangle ROIs around your objects-of-interest.  
 
-Otherwise, open you images one-by-one in ImageJ/Fiji and start drawing rectangle ROIs around your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you can group them together by adding their group numbers (1,2... so one) by selecting *Properties...* in the ROI Manager (see step 2 for more details on adding the group numbers). If there is only one type of object you are interested in annotating, then there is no need for defining the group number.
+Otherwise, open you images one-by-one in ImageJ/Fiji and start drawing rectangle ROIs around your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you need to group them together by adding their group numbers (1,2... so one) by selecting *Properties...* in the ROI Manager (see Step 2, Case 2 for more details on adding the group numbers). If there is only one type of object you are interested in annotating, then there is no need for defining the group number.
 
 ### Step 2: 
 Keep all of your images and the corresponding ROIs.zip files in a folder. Open one image and its corresponding ROIs.zip file in ImageJ/Fiji and run the [PASCAL VOC xml generator macro](https://github.com/ved-sharma/PASCAL_VOC_xml_generator_ImageJ_Fiji/blob/ddc2599146b171bcdcc25ea3ef31f13e45f9f3ec/PASCAL_VOC_xml_generator.ijm)  
