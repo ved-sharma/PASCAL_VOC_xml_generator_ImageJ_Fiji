@@ -1,5 +1,7 @@
-## Create bounding box annotations in Pascal VOC xml format using ImageJ/Fiji to use in training a Deep Learning object detection model 
-There are many open-source softwares/web-tools (e.g. MakeSense, Img--) available for making bounding box annotations in images and saving them in Pascal VOC format for the downstream processing in a Deep Learning model for object detection.
+## Create bounding box annotations in Pascal VOC .xml format using [ImageJ/Fiji](https://imagej.net/)
+There are many open-source softwares/web-tools (e.g. [MakeSense](https://github.com/SkalskiP/make-sense), [LabelImg](https://github.com/tzutalin/labelImg
+)) available for making bounding box annotations in images and saving them in Pascal VOC format for the downstream processing in a Deep Learning model for object detection.
+
 
 ## Why do I need an annotaion tool based on ImageJ/Fiji
 I can think of three reasons:
@@ -9,11 +11,17 @@ I can think of three reasons:
 
 ## How does it work
 **Step 1**: Go to step 2 if you have already created bounding box rectangle ROIs around your objects-of-interest.  
-Otherwise, Open you images one by one in ImageJ/Fiji and start drawing rectangle ROIs around the your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you can group them together by defining the group number (1,2... so one). If there is only one type of object you are interested in annotating, then there is no need for grouping.
+Otherwise, open you images one-by-one in ImageJ/Fiji and start drawing rectangle ROIs around your objects-of-interest and add them to the ROI Manager. If you have more than one type of objects, then you can group them together by defining the group number (1,2... so one). If there is only one type of object you are interested in annotating, then there is no need for defining the group.
 
 ![image of ROI Manager showing the group option]()
 
-**Step 2**: Keep all of your images and the corresponding ROIs.zip files in a folder. Open one image and its corresponding ROIs set in ImageJ/Fiji and run the macro
+**Step 2**: Keep all of your images and the corresponding ROIs.zip files in a folder. Open one image and its corresponding ROIs.zip file in ImageJ/Fiji and run the macro provided here.
+Case 1: Single objects
+
+
+Case 2: Multi-objects
+
+
 Note: the ROI names will be 
 
 
