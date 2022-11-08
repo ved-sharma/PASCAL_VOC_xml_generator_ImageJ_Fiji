@@ -30,5 +30,5 @@ In the following example user drew two types of ROIs - Round (shown in blue, gro
 ![](https://github.com/ved-sharma/PASCAL_VOC_xml_generator_ImageJ_Fiji/blob/ddc2599146b171bcdcc25ea3ef31f13e45f9f3ec/Files/two_groups_example.png)
 
 ## Questions
-[Image.sc](https://forum.image.sc/) is the best place to ask questions about this macro. Please post your question with @vedsharma tag so I recieve your message.
+[Image.sc](https://forum.image.sc/) is the best place to ask questions about this macro. Please post your question with @vedsharma tag so I get the notification.
 
